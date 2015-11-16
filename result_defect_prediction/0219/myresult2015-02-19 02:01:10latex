@@ -1,0 +1,12 @@
+ant & 0 &         & 39 & {\rthree} & 44 & {\rfour} & 47 & {\rfour} & 49 & {\rfour} & 53 & {\rfour}\\
+camel & 34 & {\rtwo} & 36 & {\rfour} & 31 &         & 33 & {\rone} & 36 & {\rfour} & 35 & {\rthree}\\
+ivy & 27 &         & 30 & {\rone} & 30 & {\rone} & 39 & {\rfour} & 33 & {\rtwo} & 33 & {\rtwo}\\
+jedit & 4 &         & 9 & {\rfour} & 5 &         & 10 & {\rfour} & 8 & {\rthree} & 8 & {\rthree}\\
+log4j & 60 & {\rfour} & 53 & {\rthree} & 47 & {\rone} & 39 &         & 59 & {\rfour} & 56 & {\rfour}\\
+lucene & 70 & {\rthree} & 73 & {\rfour} & 56 &         & 72 & {\rfour} & 71 & {\rfour} & 74 & {\rfour}\\
+poi & 5 &         & 78 & {\rfour} & 21 & {\rone} & 73 & {\rfour} & 76 & {\rfour} & 78 & {\rfour}\\
+synapse & 0 &         & 62 & {\rfour} & 40 & {\rthree} & 56 & {\rfour} & 56 & {\rfour} & 56 & {\rfour}\\
+velocity & 51 & {\rone} & 51 & {\rone} & 49 &         & 51 & {\rone} & 52 & {\rtwo} & 55 & {\rfour}\\
+xalan & 85 & {\rfour} & 69 & {\rtwo} & 68 & {\rtwo} & 47 &         & 71 & {\rthree} & 63 & {\rtwo}\\
+xerces & 23 &         & 51 & {\rfour} & 18 &         & 36 & {\rtwo} & 56 & {\rfour} & 53 & {\rfour}\\
+

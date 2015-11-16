@@ -1,0 +1,203 @@
+Dataset: antV0
+*****WHERE*****
+threshold : 0.16
+infoPrune : 0.32
+min_sample_size : 8
+min_Size : 0.76
+wriggle : 0.57
+depthMin : 4
+depthMax : 8
+wherePrune : False
+treePrune : True
+*****CART*****
+threshold : 0.01
+max_features : 0.32
+min_samples_split : 3
+min_samples_leaf : 8
+max_depth : 26
+*****RF*****
+threshold : 0.01
+max_features : 0.68
+max_leaf_nodes : 36
+min_samples_split : 16
+min_samples_leaf : 7
+n_estimators : 64
+
+Dataset: camelV0
+*****WHERE*****
+threshold : 0.01
+infoPrune : 1
+min_sample_size : 3
+min_Size : 0.77
+wriggle : 1
+depthMin : 3
+depthMax : 7
+wherePrune : False
+treePrune : True
+*****CART*****
+threshold : 0.01
+max_features : 0.87
+min_samples_split : 12
+min_samples_leaf : 17
+max_depth : 1
+*****RF*****
+threshold : 0.01
+max_features : 0.08
+max_leaf_nodes : 16
+min_samples_split : 8
+min_samples_leaf : 8
+n_estimators : 141
+
+Dataset: ivyV0
+*****WHERE*****
+threshold : 0.75
+infoPrune : 0.44
+min_sample_size : 6
+min_Size : 0.59
+wriggle : 0.23
+depthMin : 3
+depthMax : 10
+wherePrune : False
+treePrune : True
+*****CART*****
+threshold : 1
+max_features : 0.45
+min_samples_split : 8
+min_samples_leaf : 14
+max_depth : 41
+*****RF*****
+threshold : 1
+max_features : 0.72
+max_leaf_nodes : 15
+min_samples_split : 15
+min_samples_leaf : 9
+n_estimators : 124
+
+Dataset: jeditV0
+*****WHERE*****
+threshold : 1
+infoPrune : 1
+min_sample_size : 10
+min_Size : 0.88
+wriggle : 0.02
+depthMin : 4
+depthMax : 7
+wherePrune : False
+treePrune : False
+*****CART*****
+threshold : 0.74
+max_features : 0.6
+min_samples_split : 13
+min_samples_leaf : 14
+max_depth : 5
+*****RF*****
+threshold : 1
+max_features : 0.01
+max_leaf_nodes : 40
+min_samples_split : 11
+min_samples_leaf : 4
+n_estimators : 57
+
+Dataset: luceneV0
+*****WHERE*****
+threshold : 0.57
+infoPrune : 0.1
+min_sample_size : 3
+min_Size : 0.72
+wriggle : 0.08
+depthMin : 4
+depthMax : 5
+wherePrune : True
+treePrune : True
+*****CART*****
+threshold : 0.24
+max_features : 0.68
+min_samples_split : 12
+min_samples_leaf : 19
+max_depth : 30
+*****RF*****
+threshold : 0.34
+max_features : 0.4
+max_leaf_nodes : 40
+min_samples_split : 6
+min_samples_leaf : 20
+n_estimators : 136
+
+Dataset: poiV0
+*****WHERE*****
+threshold : 0.86
+infoPrune : 0.99
+min_sample_size : 6
+min_Size : 0.5
+wriggle : 0.42
+depthMin : 2
+depthMax : 2
+wherePrune : False
+treePrune : False
+*****CART*****
+threshold : 1
+max_features : 0.01
+min_samples_split : 2
+min_samples_leaf : 10
+max_depth : 34
+*****RF*****
+threshold : 0.96
+max_features : 0.6
+max_leaf_nodes : 49
+min_samples_split : 19
+min_samples_leaf : 11
+n_estimators : 96
+
+Dataset: synapseV0
+*****WHERE*****
+threshold : 0.35
+infoPrune : 0.23
+min_sample_size : 5
+min_Size : 0.51
+wriggle : 0.01
+depthMin : 1
+depthMax : 15
+wherePrune : False
+treePrune : True
+*****CART*****
+threshold : 0.01
+max_features : 0.01
+min_samples_split : 14
+min_samples_leaf : 15
+max_depth : 11
+*****RF*****
+threshold : 0.15
+max_features : 0.01
+max_leaf_nodes : 41
+min_samples_split : 4
+min_samples_leaf : 15
+n_estimators : 62
+
+Dataset: velocityV0
+*****WHERE*****
+threshold : 0.08
+infoPrune : 0.99
+min_sample_size : 1
+min_Size : 0.43
+wriggle : 0.87
+depthMin : 4
+depthMax : 13
+wherePrune : False
+treePrune : True
+*****CART*****
+threshold : 0.13
+bestscore : 80
+evaluation : 50
+max_features : 0.15
+min_samples_split : 6
+min_samples_leaf : 8
+max_depth : 17
+*****RF*****
+threshold : 0.74
+max_features : 0.34
+max_leaf_nodes : 40
+min_samples_split : 18
+min_samples_leaf : 17
+n_estimators : 60
+
+

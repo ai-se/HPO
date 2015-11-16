@@ -1,0 +1,32 @@
+%%%%features summary %%%%%%
+\begin{figure*}[!ht]
+\scriptsize
+\centering
+  \begin{tabular}{c|c c|c c|c c|c c|c c|c |c}
+  \hline\hline
+  Features & \multicolumn{2}{c}{Pd} & \multicolumn{2}{c}{Pf} & \multicolumn{2}{c}{Precision} & \multicolumn{2}{c}{F} & \multicolumn{2}{c}{G} &\multicolumn{2}{c}{SUM}
+\\\hline
+  noc& 0& 0& 0& 0& 0& 0& & & & & 0 & 0\\
+ca& 0& 0& 0& 0& 0& 1& & & & & 0 & 1\\
+npm& 0& 1& 0& 5& 0& 4& & & & & 0 & 10\\
+max\_cc& 0& 0& 0& 1& 0& 3& & & & & 0 & 4\\
+lcom& 0& 0& 0& 3& 0& 1& & & & & 0 & 4\\
+cbo& 0& 0& 0& 1& 0& 3& & & & & 0 & 4\\
+ce& 0& 0& 0& 1& 0& 3& & & & & 0 & 4\\
+moa& 0& 1& 0& 1& 0& 2& & & & & 0 & 4\\
+avg\_cc& 0& 0& 0& 3& 0& 3& & & & & 0 & 6\\
+amc& 4& 1& 4& 3& 4& 6& & & & & 12 & 10\\
+rfc& 4& 2& 4& 5& 4& 10& & & & & 12 & 17\\
+wmc& 5& 2& 5& 6& 5& 8& & & & & 15 & 16\\
+cbm& 4& 0& 6& 2& 5& 3& & & & & 15 & 5\\
+ic& 9& 1& 7& 5& 8& 7& & & & & 24 & 13\\
+dit& 8& 1& 8& 6& 8& 8& & & & & 24 & 15\\
+loc& 9& 1& 8& 6& 8& 11& & & & & 25 & 18\\
+cam& 9& 2& 9& 8& 9& 8& & & & & 27 & 18\\
+lcom3& 9& 0& 9& 7& 9& 12& & & & & 27 & 19\\
+dam& 14& 2& 14& 9& 14& 12& & & & & 42 & 23\\
+mfa& 16& 5& 16& 11& 16& 14& & & & & 48 & 30\\
+
+  \end{tabular}
+\end{figure*}
+

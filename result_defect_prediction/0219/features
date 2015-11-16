@@ -1,0 +1,11 @@
+		ant  & 'mfa', 'lcom3', 'cam', 'ic', 'dam'   & 'wmc', 'lcom3', 'cam', 'dam', 'npm', 'rfc'  \\ \hline
+		camel & 'cam', 'wmc', 'dit', 'mfa', 'rfc', 'loc' & 'rfc', 'cam', 'loc', 'wmc', 'dam', 'dit', 'mfa', 'lcom3', 'npm'\\ \hline
+		ivy & 'cam', 'dit', 'dam', 'ic', 'lcom3'& 'cam', 'dam', 'mfa'\\ \hline
+		jedit& 'mfa', 'dam', 'cam', 'dit', 'cbm', 'ic'& 'mfa', 'loc', 'dit', 'dam', 'cam', 'wmc'  \\ \hline
+		log4j & 'lcom3', 'mfa', 'loc', 'ic', 'dit'& 'mfa', 'wmc'  \\ \hline
+		lucene & 'mfa', 'lcom3', 'cam', 'dam', 'ic'& 'wmc', 'lcom3', 'avg\_cc', 'rfc', 'ce', 'mfa', 'dam', 'npm', 'cam' \\ \hline
+		poi & 'mfa', 'dam', 'amc', 'lcom3', 'cbm', 'loc'& 'loc', 'lcom3', 'cam', 'amc', 'dam'                                                     \\ \hline
+		synapse & 'dam', 'loc', 'mfa', 'cam' & 'loc'  \\ \hline
+		velocity& 'dit', 'dam', 'lcom3', 'ic', 'mfa'& 'mfa', 'cam', 'avg\_cc', 'loc', 'lcom3', 'cbo', 'dam', 'ic', 'rfc', 'lcom' \\ \hline
+		xalan  & 'mfa', 'cam', 'wmc', 'lcom3', 'rfc', 'dit' & 'mfa', 'rfc', 'loc', 'dam', 'lcom3', 'wmc', 'npm' \\ \hline
+		xerces & 'cam', 'wmc', 'mfa', 'rfc', 'amc', 'loc'& 'mfa', 'loc', 'cam', 'amc', 'avg\_cc'\\ \hline

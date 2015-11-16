@@ -1,0 +1,33 @@
+\begin{figure*}[!ht]
+\scriptsize
+\centering
+  \begin{tabular}{c|c c|c c|c c|c c|c c|c c|c c|c c|c c|c c|c c|c c|c c|c c|c c|c c|c c|c }
+  \hline\hline
+  Features & \multicolumn{2}{c}{ant}&\multicolumn{2}{c}{antV1}&\multicolumn{2}{c}{antV2}&\multicolumn{2}{c}{camel}&\multicolumn{2}{c}{camelV1}&\multicolumn{2}{c}{ivy}&\multicolumn{2}{c}{jedit}&\multicolumn{2}{c}{jeditV1}&\multicolumn{2}{c}{jeditV2}&\multicolumn{2}{c}{log4j}&\multicolumn{2}{c}{lucene}&\multicolumn{2}{c}{poi}&\multicolumn{2}{c}{poiV1}&\multicolumn{2}{c}{synapse}&\multicolumn{2}{c}{velocity}&\multicolumn{2}{c}{xerces}&\multicolumn{2}{c}{xercesV1}
+\\\hline
+  npm& & & & $\circ$& & & & & & $\circ$& & $\circ$& & & & & & & & & & $\circ$& & $\circ$& & & & & & & & & & \\
+loc& & & $\star$& $\circ$& & & $\star$& $\circ$& $\star$& $\circ$& & & & $\circ$& & & & $\circ$& $\star$& $\circ$& & & & $\circ$& $\star$& & $\star$& $\circ$& & & $\star$& $\circ$& $\star$& $\circ$\\
+amc& & & & & & & & $\circ$& & $\circ$& & $\circ$& & & & & & & & & & & $\star$& $\circ$& $\star$& & & & & $\circ$& $\star$& $\circ$& $\star$& \\
+max
+cc& & & & & & & & & & & & & & & & & & & & & & & & & & $\circ$& & & & & & $\circ$& & \\
+lcom& & & & $\circ$& & & & & & $\circ$& & & & & & & & & & & & $\circ$& & $\circ$& & & & $\circ$& & & & & & \\
+dam& $\star$& & $\star$& & $\star$& & $\star$& $\circ$& & $\circ$& $\star$& $\circ$& $\star$& $\circ$& $\star$& $\circ$& $\star$& $\circ$& & & $\star$& $\circ$& $\star$& $\circ$& $\star$& $\circ$& $\star$& $\circ$& $\star$& $\circ$& $\star$& $\circ$& & \\
+ca& & & & & & & & & & & & $\circ$& & & & & & & & & & & & & & & & & & & & & & \\
+cbo& & & & & & & & & & $\circ$& & & & & & & & & & & & $\circ$& & $\circ$& & & & & & $\circ$& & $\circ$& & \\
+ce& & & & & & & & & & $\circ$& & & & $\circ$& & & & & & & & $\circ$& & $\circ$& & $\circ$& & & & & & $\circ$& & \\
+noc& & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & \\
+rfc& & $\circ$& & $\circ$& & & $\star$& $\circ$& $\star$& $\circ$& & $\circ$& & $\circ$& & $\circ$& & & & $\circ$& & $\circ$& $\star$& & & & & & & $\circ$& & $\circ$& $\star$& \\
+dit& & & $\star$& $\circ$& & & & $\circ$& $\star$& $\circ$& $\star$& $\circ$& $\star$& & $\star$& $\circ$& $\star$& & $\star$& & & & & $\circ$& & & & & $\star$& $\circ$& & $\circ$& & \\
+mfa& $\star$& $\circ$& $\star$& $\circ$& $\star$& & $\star$& $\circ$& $\star$& $\circ$& & $\circ$& $\star$& $\circ$& $\star$& $\circ$& $\star$& $\circ$& $\star$& & $\star$& $\circ$& $\star$& $\circ$& $\star$& $\circ$& $\star$& $\circ$& $\star$& & $\star$& $\circ$& $\star$& \\
+cam& & & & $\circ$& $\star$& & $\star$& $\circ$& $\star$& $\circ$& $\star$& $\circ$& & & & $\circ$& $\star$& $\circ$& & $\circ$& $\star$& & & & & $\circ$& $\star$& $\circ$& & $\circ$& $\star$& $\circ$& $\star$& \\
+avg
+cc& & & & & & & & & & & & & & $\circ$& & & & & & & & $\circ$& & & & $\circ$& & & & & & $\circ$& & \\
+wmc& $\star$& & $\star$& & & $\circ$& & $\circ$& $\star$& $\circ$& & $\circ$& & & & $\circ$& & $\circ$& & $\circ$& & $\circ$& $\star$& $\circ$& & & & $\circ$& & $\circ$& & $\circ$& $\star$& \\
+moa& & & & $\circ$& & & & & & & & & & & & & & & & & & $\circ$& & $\circ$& & & & & & & & & & \\
+cbm& & & & & & & & & & $\circ$& & & $\star$& & $\star$& $\circ$& $\star$& & & & & & & & $\star$& & & & $\star$& $\circ$& & $\circ$& & \\
+ic& $\star$& & & $\circ$& $\star$& & & $\circ$& & & $\star$& $\circ$& $\star$& & $\star$& $\circ$& $\star$& & $\star$& & $\star$& & & & & & & & $\star$& $\circ$& & & & \\
+lcom3& & & & $\circ$& $\star$& & $\star$& $\circ$& & $\circ$& $\star$& $\circ$& $\star$& & $\star$& $\circ$& & & $\star$& $\circ$& $\star$& $\circ$& & & $\star$& $\circ$& & & $\star$& $\circ$& & $\circ$& & \\
+
+  \end{tabular}
+\end{figure*}
+

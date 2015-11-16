@@ -1,0 +1,81 @@
+%%%%parameters for prec %%%%%%
+\begin{figure*}[!ht]
+\resizebox{\textwidth}{!}{
+\scriptsize
+\centering
+  \begin{tabular}{|c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |}
+    \hline
+  \begin{tabular}[c]{@{}c@{}}Learner \\ Name\end{tabular}&Parameters  & Default &antV0&antV1&antV2&camelV0&camelV1&ivyV0&jeditV0&jeditV1&jeditV2&log4jV0&luceneV0&poiV0&poiV1&synapseV0&velocityV0&xercesV0&xercesV1\\ 
+ \hline
+\multirow{8}{*}{\begin{tabular}[c]{@{}c@{}}Where\\based\\ Learner\end{tabular}}
+& threshold& 0.5& 0.53& 0.95& 0.37& 0.3& 0.13& 0.57& 0.74& 0.55& 0.85& 0.39& 0.99& 0.57& 0.8& 0.83& 0.86& 0.91& 0.51\\ \cline{2-20}
+& infoPrune& 0.33& 0.68& 0.6& 0.86& 0.45& 0.78& 0.82& 0.3& 0.35& 0.57& 0.4& 0.48& 0.69& 0.98& 0.74& 0.77& 0.18& 0.5\\ \cline{2-20}
+& min\_sample\_size& 4& 3& 7& 9& 2& 2& 7& 9& 6& 8& 2& 2& 5& 1& 5& 7& 6& 9\\ \cline{2-20}
+& min\_Size& 0.5& 0.07& 0.81& 0.56& 0.87& 0.09& 0.49& 0.05& 0.11& 0.72& 0.31& 1& 0.06& 0.76& 0.71& 0.89& 0.02& 0.06\\ \cline{2-20}
+& wriggle& 0.2& 0.91& 0.45& 0.22& 0.13& 0.01& 0.04& 0.32& 0.46& 0.43& 0.5& 0.34& 0.01& 0.12& 0.53& 0.36& 0.23& 0.73\\ \cline{2-20}
+& depthMin& 2& 4& 4& 4& 4& 3& 1& 3& 4& 1& 4& 6& 1& 3& 2& 3& 3& 1\\ \cline{2-20}
+& depthMax& 10& 10& 9& 5& 15& 12& 13& 14& 13& 18& 2& 6& 19& 1& 3& 1& 15& 11\\ \cline{2-20}
+& wherePrune& False& True& True& True& False& True& True& True& True& True& False& False& True& False& True& False& True& True\\ \cline{2-20}
+& treePrune& True& True& False& True& True& False& True& False& False& False& True& False& False& True& True& False& True& True\\ \cline{2-20}
+\hline
+\multirow{4}{*}{CART}
+& threshold& 0.5& 0.83& 0.78& 0.81& 0.33& 0.97& 0.92& 0.01& 0.78& 1& 1& 1& 0.84& 0.58& 0.41& 1& 1& 0.46\\ \cline{2-20}
+& max\_feature& None& 0.01& 0.63& 0.98& 0.01& 0.89& 0.28& 0.01& 0.87& 0.01& 0.01& 0.29& 1.0& 0.56& 0.15& 0.65& 0.82& 0.63\\ \cline{2-20}
+& min\_samples\_split& 2& 18& 13& 8& 13& 9& 18& 2& 4& 12& 6& 10& 18& 8& 2& 2& 16& 2\\ \cline{2-20}
+& min\_samples\_leaf& 1& 3& 19& 8& 6& 17& 17& 1& 15& 4& 7& 19& 19& 13& 4& 20& 1& 1\\ \cline{2-20}
+\hline
+\multirow{6}{*}{\begin{tabular}[c]{@{}c@{}}Random \\ Forests\end{tabular}} 
+& max_depth& None& 1& 25& 25& 38& 14& 21& 32& 13& 1& 22& 2& 23& 44& 1& 49& 47& 1\\ \cline{2-20}
+& threshold& 0.5& 0.86& 0.99& 0.87& 0.82& 0.69& 0.78& 1& 1& 1& 1& 0.72& 0.83& 0.74& 0.71& 1& 0.89& 0.7\\ \cline{2-20}
+& max\_feature& None& 0.05& 0.18& 0.31& 0.37& 0.93& 0.95& 0.23& 1& 0.97& 0.01& 0.61& 0.86& 0.73& 0.01& 0.49& 0.88& 0.01\\ \cline{2-20}
+& max\_leaf\_nodes& None& 16& 24& 18& 23& 20& 18& 40& 47& 10& 50& 31& 38& 17& 34& 35& 10& 16\\ \cline{2-20}
+& min\_samples\_split& 2& 3& 1& 14& 13& 10& 13& 1& 7& 1& 4& 11& 1& 17& 7& 20& 14& 20\\ \cline{2-20}
+& min\_samples\_leaf& 1& 7& 3& 2& 5& 5& 12& 2& 3& 5& 15& 16& 2& 5& 3& 2& 5& 7\\ \cline{2-20}
+& n\_estimators& 100& 85& 55& 56& 83& 110& 57& 70& 96& 54& 84& 136& 75& 135& 80& 107& 58& 139\\ \cline{2-20}
+\hline  \end{tabular}
+}
+  \caption{Parameters tuned on different models over the objective of prec}
+\end{figure*}
+
+
+%%%%parameters for F %%%%%%
+\begin{figure*}[!ht]
+\resizebox{\textwidth}{!}{
+\scriptsize
+\centering
+  \begin{tabular}{|c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |}
+    \hline
+  \begin{tabular}[c]{@{}c@{}}Learner \\ Name\end{tabular}&Parameters  & Default &antV0&antV1&antV2&camelV0&camelV1&ivyV0&jeditV0&jeditV1&jeditV2&log4jV0&luceneV0&poiV0&poiV1&synapseV0&velocityV0&xercesV0&xercesV1\\ 
+ \hline
+\multirow{8}{*}{\begin{tabular}[c]{@{}c@{}}Where\\based\\ Learner\end{tabular}}
+& threshold& 0.5& 0.16& 0.89& 0.59& 0.01& 1.0& 0.75& 1& 0.53& 0.96& 0.33& 0.57& 0.86& 0.01& 0.35& 0.08& 0.82& 0.2\\ \cline{2-20}
+& infoPrune& 0.33& 0.32& 0.4& 0.51& 1& 0.46& 0.44& 1& 0.2& 0.81& 0.15& 0.1& 0.99& 0.08& 0.23& 0.99& 0.91& 0.2\\ \cline{2-20}
+& min\_sample\_size& 4& 8& 1& 4& 3& 5& 6& 10& 7& 1& 6& 3& 6& 6& 5& 1& 8& 8\\ \cline{2-20}
+& min\_Size& 0.5& 0.76& 0.89& 0.57& 0.77& 0.57& 0.59& 0.88& 0.47& 1& 0.84& 0.72& 0.5& 0.33& 0.51& 0.43& 0.56& 0.44\\ \cline{2-20}
+& wriggle& 0.2& 0.57& 0.85& 0.81& 1& 0.21& 0.23& 0.02& 1& 0.44& 0.92& 0.08& 0.42& 0.62& 0.01& 0.87& 0.04& 0.3\\ \cline{2-20}
+& depthMin& 2& 4& 3& 2& 3& 4& 3& 4& 1& 4& 3& 4& 2& 3& 1& 4& 1& 2\\ \cline{2-20}
+& depthMax& 10& 8& 10& 18& 7& 17& 10& 7& 16& 11& 10& 5& 2& 8& 15& 13& 3& 17\\ \cline{2-20}
+& wherePrune& False& False& False& False& False& True& False& False& False& True& False& True& False& True& False& False& False& True\\ \cline{2-20}
+& treePrune& True& True& False& True& True& False& True& False& False& False& True& True& False& False& True& True& False& True\\ \cline{2-20}
+\hline
+\multirow{4}{*}{CART}
+& threshold& 0.5& 0.01& 0.4& 0.01& 0.01& 0.9& 1& 0.74& 0.8& 1& 0.21& 0.24& 1& 0.01& 0.01& 0.13& 1& 0.01\\ \cline{2-20}
+& max\_feature& None& 0.32& 0.1& 0.49& 0.87& 0.72& 0.45& 0.6& 0.77& 0.74& 0.17& 0.68& 0.01& 0.01& 0.01& 0.15& 0.22& 0.01\\ \cline{2-20}
+& min\_samples\_split& 2& 3& 11& 16& 12& 3& 8& 13& 2& 8& 9& 12& 2& 2& 14& 6& 12& 20\\ \cline{2-20}
+& min\_samples\_leaf& 1& 8& 10& 14& 17& 5& 14& 14& 20& 17& 2& 19& 10& 3& 15& 8& 8& 2\\ \cline{2-20}
+\hline
+\multirow{6}{*}{\begin{tabular}[c]{@{}c@{}}Random \\ Forests\end{tabular}} 
+& max_depth& None& 26& 48& 12& 1& 9& 41& 5& 6& 5& 9& 30& 34& 5& 11& 17& 31& 50\\ \cline{2-20}
+& threshold& 0.5& 0.01& 0.49& 0.14& 0.01& 1& 1& 1& 0.98& 1& 0.59& 0.34& 0.96& 0.01& 0.15& 0.74& 1.0& 0.72\\ \cline{2-20}
+& max\_feature& None& 0.68& 0.49& 1& 0.08& 0.28& 0.72& 0.01& 0.71& 0.01& 0.27& 0.4& 0.6& 1& 0.01& 0.34& 0.01& 0.84\\ \cline{2-20}
+& max\_leaf\_nodes& None& 36& 30& 43& 16& 21& 15& 40& 44& 10& 24& 40& 49& 21& 41& 40& 10& 41\\ \cline{2-20}
+& min\_samples\_split& 2& 16& 13& 17& 8& 11& 15& 11& 8& 10& 17& 6& 19& 11& 4& 18& 18& 10\\ \cline{2-20}
+& min\_samples\_leaf& 1& 7& 15& 7& 8& 2& 9& 4& 4& 2& 9& 20& 11& 7& 15& 17& 2& 18\\ \cline{2-20}
+& n\_estimators& 100& 64& 54& 84& 141& 63& 124& 57& 140& 114& 133& 136& 96& 131& 62& 60& 110& 92\\ \cline{2-20}
+\hline  \end{tabular}
+}
+  \caption{Parameters tuned on different models over the objective of F}
+\end{figure*}
+
+
+

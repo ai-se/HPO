@@ -1,0 +1,18 @@
+antV0 & $\bigstar$39 & {\rfour} & 25 & {\rtwo} & 32 & {\rthree} & 31 & {\rthree} & $\bigstar$39 & {\rfour} & 12 &        \\
+antV1 & 11 &         & 6 &         & 40 & {\rfour} & $\bigstar$45 & {\rfour} & 39 & {\rfour} & 44 & {\rfour}\\
+antV2 & 0 &         & $\bigstar$87 & {\rfour} & 44 & {\rtwo} & 1 &         & 50 & {\rtwo} & 51 & {\rtwo}\\
+camelV0 & 0 &         & 28 & {\rfour} & 9 & {\rone} & 28 & {\rfour} & $\bigstar$34 & {\rfour} & 30 & {\rfour}\\
+camelV1 & 34 & {\rtwo} & 34 & {\rtwo} & 31 &         & 31 &         & $\bigstar$37 & {\rfour} & 34 & {\rtwo}\\
+ivyV0 & 27 &         & 28 &         & 30 & {\rtwo} & $\bigstar$32 & {\rfour} & 28 &         & 28 &        \\
+jeditV0 & 50 &         & 55 & {\rtwo} & 56 & {\rtwo} & 52 &         & $\bigstar$61 & {\rfour} & 59 & {\rfour}\\
+jeditV1 & 37 &         & $\bigstar$93 & {\rfour} & 36 &         & 42 &         & 47 &         & 49 & {\rone}\\
+jeditV2 & 4 &         & $\bigstar$99 & {\rfour} & 5 &         & 9 &         & 9 &         & 7 &        \\
+log4jV0 & $\bigstar$62 & {\rfour} & 52 & {\rone} & 47 &         & 53 & {\rone} & 59 & {\rthree} & 60 & {\rfour}\\
+luceneV0 & 70 & {\rthree} & 73 & {\rfour} & 56 &         & $\bigstar$75 & {\rfour} & 66 & {\rtwo} & 74 & {\rfour}\\
+poiV0 & $\bigstar$78 & {\rfour} & 75 & {\rfour} & 74 & {\rthree} & 62 &         & 73 & {\rthree} & 72 & {\rthree}\\
+poiV1 & 5 &         & $\bigstar$79 & {\rfour} & 21 & {\rone} & 78 & {\rfour} & 76 & {\rfour} & 78 & {\rfour}\\
+synapseV0 & 0 &         & $\bigstar$79 & {\rfour} & 40 & {\rtwo} & 56 & {\rthree} & 52 & {\rthree} & 55 & {\rthree}\\
+velocityV0 & $\bigstar$51 & {\rfour} & $\bigstar$51 & {\rfour} & 49 &         & $\bigstar$51 & {\rfour} & $\bigstar$51 & {\rfour} & $\bigstar$51 & {\rfour}\\
+xercesV0 & 22 & {\rthree} & 19 &         & 21 & {\rtwo} & 20 & {\rone} & $\bigstar$23 & {\rfour} & 21 & {\rtwo}\\
+xercesV1 & 23 & {\rone} & 0 &         & 18 & {\rone} & 48 & {\rthree} & 68 & {\rfour} & $\bigstar$72 & {\rfour}\\
+

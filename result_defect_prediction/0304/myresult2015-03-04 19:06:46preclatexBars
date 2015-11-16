@@ -1,0 +1,18 @@
+antV0 & 30 &         & $\bigstar$89 & {\rfour} & 27 &         & $\bigstar$89 & {\rfour} & 39 &         & $\bigstar$89 & {\rfour}\\
+antV1 & 32 & {\rtwo} & $\bigstar$74 & {\rfour} & 41 & {\rtwo} & $\bigstar$74 & {\rfour} & 43 & {\rtwo} & 0 &        \\
+antV2 & $\bigstar$78 & {\rfour} & $\bigstar$78 & {\rfour} & 52 &         & 68 & {\rthree} & 66 & {\rtwo} & 67 & {\rtwo}\\
+camelV0 & $\bigstar$83 & {\rfour} & $\bigstar$83 & {\rfour} & 26 &         & 33 &         & 34 &         & 45 & {\rone}\\
+camelV1 & 22 &         & $\bigstar$28 & {\rfour} & 23 &         & 24 & {\rone} & $\bigstar$28 & {\rfour} & $\bigstar$28 & {\rfour}\\
+ivyV0 & 16 &         & $\bigstar$23 & {\rfour} & 18 & {\rone} & 21 & {\rthree} & 21 & {\rthree} & 20 & {\rtwo}\\
+jeditV0 & 35 &         & $\bigstar$75 & {\rfour} & 49 & {\rone} & 56 & {\rtwo} & 50 & {\rone} & 48 & {\rone}\\
+jeditV1 & 24 &         & $\bigstar$87 & {\rfour} & 28 &         & 86 & {\rfour} & 36 &         & 39 & {\rone}\\
+jeditV2 & 2 &         & $\bigstar$98 & {\rfour} & 3 &         & 18 &         & 5 &         & 5 &        \\
+log4jV0 & 94 &         & $\bigstar$100 & {\rfour} & 97 & {\rtwo} & $\bigstar$100 & {\rfour} & $\bigstar$100 & {\rfour} & $\bigstar$100 & {\rfour}\\
+luceneV0 & 61 &         & 74 & {\rfour} & 67 & {\rone} & 70 & {\rtwo} & 72 & {\rthree} & $\bigstar$77 & {\rfour}\\
+poiV0 & 70 &         & 68 &         & 77 & {\rfour} & 72 & {\rone} & $\bigstar$79 & {\rfour} & 76 & {\rthree}\\
+poiV1 & $\bigstar$100 & {\rfour} & 90 & {\rthree} & 73 &         & 89 & {\rtwo} & 81 & {\rone} & $\bigstar$100 & {\rfour}\\
+synapseV0 & 66 &         & 66 &         & 71 & {\rone} & $\bigstar$100 & {\rfour} & 59 &         & 80 & {\rtwo}\\
+velocityV0 & 34 &         & 39 & {\rthree} & 34 &         & 40 & {\rfour} & 40 & {\rfour} & $\bigstar$41 & {\rfour}\\
+xercesV0 & 13 &         & $\bigstar$85 & {\rfour} & 14 &         & 13 &         & 15 &         & 13 &        \\
+xercesV1 & $\bigstar$56 & {\rfour} & 26 &         & 50 & {\rthree} & 26 &         & 41 & {\rtwo} & 26 &        \\
+

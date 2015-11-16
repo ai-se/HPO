@@ -1,0 +1,18 @@
+antV0 & $\bigstar$39 & {\rfour} & 25 & {\rtwo} & 32 & {\rthree} & 31 & {\rthree} & $\bigstar$39 & {\rfour} & 12 &        \\
+antV1 & 11 &         & 6 &         & 40 & {\rfour} & $\bigstar$45 & {\rfour} & 39 & {\rfour} & 44 & {\rfour}\\
+antV2 & 0 &         & $\bigstar$87 & {\rfour} & 44 & {\rtwo} & 1 &         & 50 & {\rtwo} & 51 & {\rtwo}\\
+camelV0 & 0 &         & 28 & {\rfour} & 9 & {\rone} & 28 & {\rfour} & $\bigstar$34 & {\rfour} & 30 & {\rfour}\\
+camelV1 & $\bigstar$34 & {\rfour} & $\bigstar$34 & {\rfour} & 31 &         & 32 & {\rone} & 33 & {\rthree} & 31 &        \\
+ivyV0 & 27 &         & 34 & {\rthree} & 30 & {\rone} & $\bigstar$38 & {\rfour} & 35 & {\rthree} & 33 & {\rtwo}\\
+jeditV0 & 50 &         & 56 & {\rtwo} & 56 & {\rtwo} & 54 & {\rone} & $\bigstar$61 & {\rfour} & 59 & {\rfour}\\
+jeditV1 & 37 & {\rone} & 33 &         & 36 &         & $\bigstar$49 & {\rfour} & 45 & {\rthree} & 47 & {\rfour}\\
+jeditV2 & 4 &         & 8 & {\rtwo} & 5 &         & $\bigstar$11 & {\rfour} & 9 & {\rthree} & 9 & {\rthree}\\
+log4jV0 & $\bigstar$62 & {\rfour} & 56 & {\rthree} & 47 & {\rone} & 59 & {\rfour} & 53 & {\rtwo} & 43 &        \\
+luceneV0 & 70 & {\rthree} & $\bigstar$75 & {\rfour} & 56 &         & $\bigstar$75 & {\rfour} & 73 & {\rfour} & $\bigstar$75 & {\rfour}\\
+poiV0 & $\bigstar$78 & {\rfour} & 64 &         & 74 & {\rthree} & 68 & {\rone} & 73 & {\rthree} & 69 & {\rone}\\
+poiV1 & 5 &         & $\bigstar$78 & {\rfour} & 21 & {\rone} & $\bigstar$78 & {\rfour} & 76 & {\rfour} & $\bigstar$78 & {\rfour}\\
+synapseV0 & 0 &         & 2 &         & 40 & {\rthree} & $\bigstar$56 & {\rfour} & 51 & {\rfour} & 55 & {\rfour}\\
+velocityV0 & $\bigstar$51 & {\rfour} & $\bigstar$51 & {\rfour} & 49 &         & $\bigstar$51 & {\rfour} & $\bigstar$51 & {\rfour} & $\bigstar$51 & {\rfour}\\
+xercesV0 & 22 & {\rone} & 20 &         & 21 &         & $\bigstar$27 & {\rfour} & 23 & {\rtwo} & 20 &        \\
+xercesV1 & 25 &         & 39 & {\rone} & 18 &         & 53 & {\rthree} & 68 & {\rfour} & $\bigstar$73 & {\rfour}\\
+

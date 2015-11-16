@@ -1,0 +1,25 @@
+\begin{figure*}[!ht]
+\scriptsize
+\centering
+  \begin{tabular}{c c c c c c c c c c }
+  \hline\hline
+  Dataset &ant&antV1&antV2&camel&camelV1&ivy&jedit&jeditV1&jeditV2&
+\\\hline
+  training &20/125 &40/178 &32/293 &13/339 &216/608 &63/111 &90/272 &75/306 &79/312
+\\  tunning  &40/178 &32/293 &92/351 &216/608 &145/872 &16/241 &75/306 &79/312 &48/367
+\\  testing &32/293 &92/351 &166/745 &145/872 &188/965 &40/352 &79/312 &48/367 &11/492
+\\  \end{tabular}
+\end{figure*}
+\begin{figure*}[!ht]
+\scriptsize
+\centering
+  \begin{tabular}{c c c c c c c c c c }
+  \hline\hline
+  Dataset &log4j&lucene&poi&poiV1&synapse&velocity&xerces&xercesV1
+\\\hline
+  training &34/135 &91/195 &141/237 &37/314 &16/157 &147/196 &77/162 &71/440
+\\  tunning  &37/109 &144/247 &37/314 &248/385 &60/222 &142/214 &71/440 &69/453
+\\  testing &189/205 &203/340 &248/385 &281/442 &86/256 &78/229 &69/453 &437/588
+\\  \end{tabular}
+\end{figure*}
+

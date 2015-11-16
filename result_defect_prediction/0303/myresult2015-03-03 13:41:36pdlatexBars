@@ -1,0 +1,18 @@
+antV0 & 53 & {\rone} & $\bigstar$100 & {\rfour} & 38 &         & $\bigstar$100 & {\rfour} & 97 & {\rfour} & $\bigstar$100 & {\rfour}\\
+antV1 & 7 &         & $\bigstar$100 & {\rfour} & 39 & {\rone} & 96 & {\rfour} & 95 & {\rfour} & $\bigstar$100 & {\rfour}\\
+antV2 & 0 &         & $\bigstar$100 & {\rfour} & 37 & {\rone} & $\bigstar$100 & {\rfour} & 92 & {\rfour} & 98 & {\rfour}\\
+camelV0 & 0 &         & $\bigstar$100 & {\rfour} & 6 &         & $\bigstar$100 & {\rfour} & 66 & {\rthree} & 97 & {\rfour}\\
+camelV1 & 80 & {\rthree} & $\bigstar$100 & {\rfour} & 46 &         & $\bigstar$100 & {\rfour} & 94 & {\rfour} & $\bigstar$100 & {\rfour}\\
+ivyV0 & 93 & {\rtwo} & $\bigstar$100 & {\rfour} & 88 &         & $\bigstar$100 & {\rfour} & 98 & {\rfour} & 98 & {\rfour}\\
+jeditV0 & 89 & {\rthree} & $\bigstar$100 & {\rfour} & 66 &         & 99 & {\rfour} & 96 & {\rfour} & $\bigstar$100 & {\rfour}\\
+jeditV1 & 75 & {\rtwo} & $\bigstar$100 & {\rfour} & 50 &         & $\bigstar$100 & {\rfour} & $\bigstar$100 & {\rfour} & $\bigstar$100 & {\rfour}\\
+jeditV2 & 45 &         & $\bigstar$100 & {\rfour} & 36 &         & $\bigstar$100 & {\rfour} & $\bigstar$100 & {\rfour} & $\bigstar$100 & {\rfour}\\
+log4jV0 & 46 & {\rone} & $\bigstar$100 & {\rfour} & 31 &         & $\bigstar$100 & {\rfour} & 79 & {\rthree} & 94 & {\rfour}\\
+luceneV0 & 81 & {\rthree} & $\bigstar$100 & {\rfour} & 48 &         & $\bigstar$100 & {\rfour} & $\bigstar$100 & {\rfour} & $\bigstar$100 & {\rfour}\\
+poiV0 & 89 & {\rtwo} & 96 & {\rfour} & 79 &         & $\bigstar$100 & {\rfour} & 99 & {\rfour} & $\bigstar$100 & {\rfour}\\
+poiV1 & 3 &         & $\bigstar$100 & {\rfour} & 12 &         & $\bigstar$100 & {\rfour} & 89 & {\rfour} & $\bigstar$100 & {\rfour}\\
+synapseV0 & 0 &         & $\bigstar$100 & {\rfour} & 28 & {\rone} & $\bigstar$100 & {\rfour} & 90 & {\rfour} & $\bigstar$100 & {\rfour}\\
+velocityV0 & $\bigstar$100 & {\rfour} & $\bigstar$100 & {\rfour} & 86 &         & $\bigstar$100 & {\rfour} & $\bigstar$100 & {\rfour} & $\bigstar$100 & {\rfour}\\
+xercesV0 & 64 & {\rone} & $\bigstar$100 & {\rfour} & 46 &         & $\bigstar$100 & {\rfour} & 78 & {\rtwo} & 81 & {\rthree}\\
+xercesV1 & 16 &         & $\bigstar$100 & {\rfour} & 11 &         & $\bigstar$100 & {\rfour} & 68 & {\rthree} & 84 & {\rfour}\\
+
