@@ -8,7 +8,7 @@ from smote import *
 from os import getenv
 from learner import *
 import time
-
+from sklearn.cross_validation import train_test_split
 
 def createfile(objective):
   home_path = getenv("HOME")
@@ -22,6 +22,17 @@ def writefile(s):
   f = open(The.option.resultname, 'a')
   f.write(s + '\n')
   f.close()
+
+def genTuningData(src="./data_Wollongong/2train_apache.csv"):
+  df = pd.read_csv(src,header = 0)
+  train, test = train_test_split(df, test_size = 0.2)
+  train.to_csv(src[:src.rindex("/")+1]+"00training.csv", index = False)
+  train.to_csv(src[:src.rindex("/")+1]+"00tuning.csv",index = False)
+
+def delTuningData():
+  os.remove("./data_Wollongong/Apache/00training.csv")
+  os.remove("./data_Wollongong/Apache/00tuning.csv")
+
 
 
 def start(obj,path="./data_Wollongong", isSMOTE= False):
@@ -66,7 +77,7 @@ def start(obj,path="./data_Wollongong", isSMOTE= False):
       expname = folder + "V" + str(i)
       try:
         predict = [data[i + 1]]
-        tune = [data[i+1]]
+        tune = [data[i]]
         if isSMOTE:
           train = ["./Smote"+ data[i][1:]]
         else:
@@ -94,6 +105,7 @@ def start(obj,path="./data_Wollongong", isSMOTE= False):
 
 if __name__ == "__main__":
   # SMOTE()
+  # genTuningData()
   for i in [2,3]:
     start(i)
 
