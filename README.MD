@@ -1,5 +1,5 @@
 ### Updates0.2
-This repo will be mantained and updated within ai-se group.
+This repo will be mantained and updated within ai-se group. The old [repo](https://github.com/WeiFoo/TuningLearners) will be a history and as a reference.
 
 ###Updates0.1
  In version 0.1, we had to write a DE code for each specific leaner, which is a burden to some degree and also not a good progamming practice. We need to make some improvements in this verison. The improvements include DE tuner and also the learner
