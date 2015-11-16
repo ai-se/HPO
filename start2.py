@@ -24,7 +24,7 @@ def writefile(s):
   f.close()
 
 
-def start(obj,path="./Wollongong", isSMOTE= False):
+def start(obj,path="./data_Wollongong", isSMOTE= False):
   def keep(learner, score):  # keep stats from run
     NDef = learner + ": N-Def"
     YDef = learner + ": Y-Def"
@@ -43,8 +43,9 @@ def start(obj,path="./Wollongong", isSMOTE= False):
 
     print "\n" + "+" * 20 + "\n DataSet: " + dataname + "\n" + "+" * 20
     for j, k in enumerate(["pd", "pf", "prec", "f", "g","w"]):
-      express = "\n" + "*" * 10 + k + "*" * 10
+      express = "\n" + "*" * 10 +" "+ k +" "+ "*" * 10
       writefile(express)
+      print(express)
       rdivDemo(myrdiv(lst[j]))
     writefile("End time :" + strftime("%Y-%m-%d %H:%M:%S") + "\n" * 2)
     print "\n"
@@ -64,7 +65,7 @@ def start(obj,path="./Wollongong", isSMOTE= False):
       lst = [pd, pf, prec, F, g,w]
       expname = folder + "V" + str(i)
       try:
-        predict = data[i + 1]
+        predict = [data[i + 1]]
         tune = [data[i+1]]
         if isSMOTE:
           train = ["./Smote"+ data[i][1:]]
