@@ -1,5 +1,6 @@
 from __future__ import division, print_function
 from sklearn.tree import DecisionTreeRegressor
+from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.naive_bayes import GaussianNB
 from sklearn import linear_model
@@ -85,6 +86,15 @@ def cart():
   return learn(clf)
 
 
+def cartClassifier():
+  clf = DecisionTreeClassifier(
+    max_features=The.cart.max_features,
+    max_depth=The.cart.max_depth,
+    min_samples_split=The.cart.min_samples_split,
+    min_samples_leaf=The.cart.min_samples_leaf,
+    random_state=1)
+  return learn(clf)
+
 def rf():
   clf = RandomForestRegressor(
     n_estimators=The.rf.n_estimators,
@@ -96,7 +106,7 @@ def rf():
   return learn(clf)
 
 
-def rf_classifier():
+def rfClassifier():
   clf = RandomForestClassifier(
     n_estimators=The.rf.n_estimators,
     max_features=The.rf.max_features,
