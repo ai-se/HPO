@@ -98,6 +98,14 @@ class CART(Learner):
     tuner.DE()
 
 
+class CART_clf(CART):
+  def __init__(i, train, tune, predict):
+    super(CART_clf, i).__init__(train, tune, predict)
+
+  def call(i):
+    return cartClassifier()
+
+
 class RF(Learner):
   def __init__(i, train, tune, predict):
     super(RF, i).__init__(train, tune, predict)
@@ -124,11 +132,11 @@ class RF(Learner):
 
   def call(i): return rf()
 
-class RF_classifier(RF):
+class RF_clf(RF):
   def __init__(i,train,tune,predict):
-    super(RF_classifier, i).__init__(train,tune,predict)
+    super(RF_clf, i).__init__(train,tune,predict)
 
-  def call(i): return rf_classifier()
+  def call(i): return rfClassifier()
 
 
   def optimizer(i):
