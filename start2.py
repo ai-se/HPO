@@ -89,16 +89,19 @@ def start(obj,path="./data_Wollongong", isSMOTE= False):
                 + "\nBegin time: " + strftime("%Y-%m-%d %H:%M:%S"))
       writefile(title)
       writefile("Dataset: "+expname)
-      for model in [CART_clf,RF_clf]:  # add learners here!
-        for task in ["Tuned_","Naive_"]:
-          writefile("-"*30+"\n")
-          timeout = time.time()
-          name = task + model.__name__
-          thislearner = model(train, tune, predict)
-          keep(name, thislearner.tuned() if task == "Tuned_" else thislearner.untuned())
-          run_time =name + " Running Time: " + str(round(time.time() - timeout, 3))
-          print run_time
-          writefile(run_time)
+      for _ in xrange(5):
+        for model in [CART_clf,RF_clf]:  # add learners here!
+          for task in ["Tuned_","Naive_"]:
+            writefile("-"*30+"\n")
+            timeout = time.time()
+            name = task + model.__name__
+            thislearner = model(train, tune, predict)
+            keep(name, thislearner.tuned() if task == "Tuned_" else thislearner.untuned())
+            run_time =name + " Running Time: " + str(round(time.time() - timeout, 3))
+            print run_time
+            writefile(run_time)
+        delTuningData()
+        genTuningData()
       printResult(expname)
 
 
@@ -107,5 +110,4 @@ if __name__ == "__main__":
   for i in [2,3]:
     genTuningData()
     start(i)
-    delTuningData()
 
