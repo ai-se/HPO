@@ -26,8 +26,8 @@ def writefile(s):
 def genTuningData(src="./data_Wollongong/2train_apache.csv"):
   df = pd.read_csv(src,header = 0)
   train, test = train_test_split(df, test_size = 0.2)
-  train.to_csv(src[:src.rindex("/")+1]+"00training.csv", index = False)
-  train.to_csv(src[:src.rindex("/")+1]+"00tuning.csv",index = False)
+  train.to_csv(src[:src.rindex("/")+1]+"Apache/00training.csv", index = False)
+  test.to_csv(src[:src.rindex("/")+1]+"Apache/00tuning.csv",index = False)
 
 def delTuningData():
   os.remove("./data_Wollongong/Apache/00training.csv")
@@ -37,8 +37,8 @@ def delTuningData():
 
 def start(obj,path="./data_Wollongong", isSMOTE= False):
   def keep(learner, score):  # keep stats from run
-    NDef = learner + ": N-Def"
-    YDef = learner + ": Y-Def"
+    NDef = learner + ": N-Del"
+    YDef = learner + ": Y-Del"
     for j, s in enumerate(lst):
       s[NDef] = s.get(NDef, []) + [(float(score[0][j] / 100))]
       s[YDef] = s.get(YDef, []) + [(float(score[1][j] / 100))]
@@ -76,8 +76,8 @@ def start(obj,path="./data_Wollongong", isSMOTE= False):
       lst = [pd, pf, prec, F, g,w]
       expname = folder + "V" + str(i)
       try:
-        predict = [data[i + 1]]
-        tune = [data[i]]
+        predict = [data[i + 2]]
+        tune = [data[i+1]]
         if isSMOTE:
           train = ["./Smote"+ data[i][1:]]
         else:
@@ -87,10 +87,9 @@ def start(obj,path="./data_Wollongong", isSMOTE= False):
         break
       title =  ("Tuning objective: " +objectives[The.option.tunedobjective]
                 + "\nBegin time: " + strftime("%Y-%m-%d %H:%M:%S"))
-      # pdb.set_trace()
       writefile(title)
       writefile("Dataset: "+expname)
-      for model in [RF_classifier]:  # add learners here!
+      for model in [CART_clf,RF_clf]:  # add learners here!
         for task in ["Tuned_","Naive_"]:
           writefile("-"*30+"\n")
           timeout = time.time()
@@ -105,7 +104,8 @@ def start(obj,path="./data_Wollongong", isSMOTE= False):
 
 if __name__ == "__main__":
   # SMOTE()
-  # genTuningData()
   for i in [2,3]:
+    genTuningData()
     start(i)
+    delTuningData()
 
