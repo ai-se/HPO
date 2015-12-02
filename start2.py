@@ -32,7 +32,6 @@ def genTuningData(path="./data_Wollongong/"):
     nextpath = join(path, folder)
     data_src = [join(nextpath, f) for f in listdir(nextpath) if isfile(
       join(nextpath, f)) and ".DS" not in f and "train_" in f]
-    pdb.set_trace()
     if len(data_src)>1:
       delTuningData()
     else:
@@ -51,7 +50,6 @@ def delTuningData(path="./data_Wollongong/"):
     nextpath = join(path, folder)
     data_src = [join(nextpath, f) for f in listdir(nextpath) if
                 isfile(join(nextpath, f)) and ".DS" not in f and "00" in f]
-    pdb.set_trace()
     os.remove(data_src[0])
     os.remove(data_src[1])
 
@@ -138,10 +136,6 @@ def start(obj, path="./data_Wollongong", isSMOTE=False):
 
 
 if __name__ == "__main__":
-  # SMOTE()
-  # test1()
-  # delTuningData()
-  # pdb.set_trace()
   for i in [2, 3]:
     genTuningData()
     start(i)
