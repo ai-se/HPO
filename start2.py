@@ -23,15 +23,28 @@ def writefile(s):
   f.write(s + '\n')
   f.close()
 
-def genTuningData(src="./data_Wollongong/2train_apache.csv"):
-  df = pd.read_csv(src,header = 0)
-  train, test = train_test_split(df, test_size = 0.2)
-  train.to_csv(src[:src.rindex("/")+1]+"Apache/00training.csv", index = False)
-  test.to_csv(src[:src.rindex("/")+1]+"Apache/00tuning.csv",index = False)
+def genTuningData(path="./data_Wollongong/"):
+  folders = [f for f in listdir(path) if not isfile(join(path, f))]
+  for folder in folders[:]:
+    nextpath = join(path, folder)
+    data_src = [join(nextpath, f) for f in listdir(nextpath)
+            if isfile(join(nextpath, f)) and ".DS" not in f and "train_" in f][0]
+    pdb.set_trace()
+    df = pd.read_csv(data_src,header = 0)
+    train, test = train_test_split(df, test_size = 0.2)
+    train.to_csv(data_src[:data_src.rindex("/")+1]+"00training.csv", index = False)
+    test.to_csv(data_src[:data_src.rindex("/")+1]+"00tuning.csv",index = False)
+    print("hah")
 
-def delTuningData():
-  os.remove("./data_Wollongong/Apache/00training.csv")
-  os.remove("./data_Wollongong/Apache/00tuning.csv")
+def delTuningData(path="./data_Wollongong/"):
+  folders = [f for f in listdir(path) if not isfile(join(path, f))]
+  for folder in folders[:]:
+    nextpath = join(path, folder)
+    data_src = [join(nextpath, f) for f in listdir(nextpath)
+            if isfile(join(nextpath, f)) and ".DS" not in f and "00" in f]
+    pdb.set_trace()
+    os.remove(data_src[0])
+    os.remove(data_src[1])
 
 
 
@@ -40,7 +53,7 @@ def start(obj,path="./data_Wollongong", isSMOTE= False):
     NDef = learner + ": N-Del"
     YDef = learner + ": Y-Del"
     for j, s in enumerate(lst):
-      s[NDef] = s.get(NDef, []) + [(float(score[0][j] / 100))]
+      # s[NDef] = s.get(NDef, []) + [(float(score[0][j] / 100))]
       s[YDef] = s.get(YDef, []) + [(float(score[1][j] / 100))]
       # [YDef] will void to use myrdiv.
 
@@ -95,6 +108,13 @@ def start(obj,path="./data_Wollongong", isSMOTE= False):
             writefile("-"*30+"\n")
             timeout = time.time()
             name = task + model.__name__
+            if task == "Tuned_":
+              train = [data[i]]
+              tune = [data[i+1]]
+              predict = [data[i+2]]
+            else:
+              train = [data[i+3]]
+              predict = [data[i+2]]
             thislearner = model(train, tune, predict)
             keep(name, thislearner.tuned() if task == "Tuned_" else thislearner.untuned())
             run_time =name + " Running Time: " + str(round(time.time() - timeout, 3))
@@ -107,6 +127,8 @@ def start(obj,path="./data_Wollongong", isSMOTE= False):
 
 if __name__ == "__main__":
   # SMOTE()
+  delTuningData()
+  pdb.set_trace()
   for i in [2,3]:
     genTuningData()
     start(i)
