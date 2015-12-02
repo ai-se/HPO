@@ -9,11 +9,13 @@ from os import getenv
 from learner import *
 import time
 from sklearn.cross_validation import train_test_split
+import pandas as pd
+
 
 def createfile(objective):
   home_path = getenv("HOME")
-  The.option.resultname = (home_path+'/Google Drive/EXP/myresult'
-                           + strftime("%Y-%m-%d %H:%M:%S") + objective)
+  The.option.resultname = (home_path + '/Google Drive/EXP/myresult' + strftime(
+    "%Y-%m-%d %H:%M:%S") + objective)
   f = open(The.option.resultname, 'w').close()
 
 
@@ -23,32 +25,38 @@ def writefile(s):
   f.write(s + '\n')
   f.close()
 
+
 def genTuningData(path="./data_Wollongong/"):
   folders = [f for f in listdir(path) if not isfile(join(path, f))]
   for folder in folders[:]:
     nextpath = join(path, folder)
-    data_src = [join(nextpath, f) for f in listdir(nextpath)
-            if isfile(join(nextpath, f)) and ".DS" not in f and "train_" in f][0]
+    data_src = [join(nextpath, f) for f in listdir(nextpath) if isfile(
+      join(nextpath, f)) and ".DS" not in f and "train_" in f]
     pdb.set_trace()
-    df = pd.read_csv(data_src,header = 0)
-    train, test = train_test_split(df, test_size = 0.2)
-    train.to_csv(data_src[:data_src.rindex("/")+1]+"00training.csv", index = False)
-    test.to_csv(data_src[:data_src.rindex("/")+1]+"00tuning.csv",index = False)
-    print("hah")
+    if len(data_src)>1:
+      delTuningData()
+    else:
+      data_src = data_src[0]
+    df = pd.read_csv(data_src, header=0)
+    train, test = train_test_split(df, test_size=0.2)
+    train.to_csv(data_src[:data_src.rindex("/") + 1] + "00training.csv",
+                 index=False)
+    test.to_csv(data_src[:data_src.rindex("/") + 1] + "00tuning.csv",
+                index=False)
+
 
 def delTuningData(path="./data_Wollongong/"):
   folders = [f for f in listdir(path) if not isfile(join(path, f))]
   for folder in folders[:]:
     nextpath = join(path, folder)
-    data_src = [join(nextpath, f) for f in listdir(nextpath)
-            if isfile(join(nextpath, f)) and ".DS" not in f and "00" in f]
+    data_src = [join(nextpath, f) for f in listdir(nextpath) if
+                isfile(join(nextpath, f)) and ".DS" not in f and "00" in f]
     pdb.set_trace()
     os.remove(data_src[0])
     os.remove(data_src[1])
 
 
-
-def start(obj,path="./data_Wollongong", isSMOTE= False):
+def start(obj, path="./data_Wollongong", isSMOTE=False):
   def keep(learner, score):  # keep stats from run
     NDef = learner + ": N-Del"
     YDef = learner + ": Y-Del"
@@ -66,8 +74,8 @@ def start(obj,path="./data_Wollongong", isSMOTE= False):
       return stat
 
     print "\n" + "+" * 20 + "\n DataSet: " + dataname + "\n" + "+" * 20
-    for j, k in enumerate(["pd", "pf", "prec", "f", "g","w"]):
-      express = "\n" + "*" * 10 +" "+ k +" "+ "*" * 10
+    for j, k in enumerate(["pd", "pf", "prec", "f", "g", "w"]):
+      express = "\n" + "*" * 10 + " " + k + " " + "*" * 10
       writefile(express)
       print(express)
       rdivDemo(myrdiv(lst[j]))
@@ -75,61 +83,65 @@ def start(obj,path="./data_Wollongong", isSMOTE= False):
     print "\n"
 
   global The
-  The.option.tunedobjective = obj # 0->pd, 1->pf,2->prec, 3->f, 4->g
-  objectives = {0: "pd", 1: "pf", 2: "prec", 3: "f", 4: "g", 5:"combined"}
+  The.option.tunedobjective = obj  # 0->pd, 1->pf,2->prec, 3->f, 4->g
+  objectives = {0: "pd", 1: "pf", 2: "prec", 3: "f", 4: "g", 5: "combined"}
   createfile(objectives[The.option.tunedobjective])
   folders = [f for f in listdir(path) if not isfile(join(path, f))]
   for folder in folders[:]:
     nextpath = join(path, folder)
-    data = [join(nextpath, f) for f in listdir(nextpath)
-            if isfile(join(nextpath, f)) and ".DS" not in f]
+    data = [join(nextpath, f) for f in listdir(nextpath) if
+            isfile(join(nextpath, f)) and ".DS" not in f]
     for i in range(len(data)):
       random.seed(1)
-      pd, pf, prec, F, g, w= {}, {}, {}, {}, {},{}
-      lst = [pd, pf, prec, F, g,w]
+      pd, pf, prec, F, g, w = {}, {}, {}, {}, {}, {}
+      lst = [pd, pf, prec, F, g, w]
       expname = folder + "V" + str(i)
-      try:
-        predict = [data[i + 2]]
-        tune = [data[i+1]]
-        if isSMOTE:
-          train = ["./Smote"+ data[i][1:]]
-        else:
-          train = [data[i]]
-      except IndexError, e:
-        print folder + " done!"
-        break
-      title =  ("Tuning objective: " +objectives[The.option.tunedobjective]
-                + "\nBegin time: " + strftime("%Y-%m-%d %H:%M:%S"))
+      # try:
+      #   predict = [data[i + 2]]
+      #   tune = [data[i + 1]]
+      #   if isSMOTE:
+      #     train = ["./Smote" + data[i][1:]]
+      #   else:
+      #     train = [data[i]]
+      # except IndexError, e:
+        # break
+      title = ("Tuning objective: " + objectives[
+        The.option.tunedobjective] + "\nBegin time: " + strftime(
+        "%Y-%m-%d %H:%M:%S"))
       writefile(title)
-      writefile("Dataset: "+expname)
+      writefile("Dataset: " + expname)
       for _ in xrange(5):
-        for model in [CART_clf,RF_clf]:  # add learners here!
-          for task in ["Tuned_","Naive_"]:
-            writefile("-"*30+"\n")
+        for model in [CART_clf, RF_clf]:  # add learners here!
+          for task in ["Tuned_", "Naive_"]:
+            writefile("-" * 30 + "\n")
             timeout = time.time()
             name = task + model.__name__
             if task == "Tuned_":
               train = [data[i]]
-              tune = [data[i+1]]
-              predict = [data[i+2]]
+              tune = [data[i + 1]]
+              predict = [data[i + 2]]
             else:
-              train = [data[i+3]]
-              predict = [data[i+2]]
+              train = [data[i + 3]]
+              predict = [data[i + 2]]
             thislearner = model(train, tune, predict)
-            keep(name, thislearner.tuned() if task == "Tuned_" else thislearner.untuned())
-            run_time =name + " Running Time: " + str(round(time.time() - timeout, 3))
+            keep(name,
+                 thislearner.tuned() if task == "Tuned_" else
+                 thislearner.untuned())
+            run_time = name + " Running Time: " + str(
+              round(time.time() - timeout, 3))
             print run_time
             writefile(run_time)
-        delTuningData()
-        genTuningData()
+        # delTuningData()
+        # genTuningData()
+      print folder + " done!"
       printResult(expname)
 
 
 if __name__ == "__main__":
   # SMOTE()
-  delTuningData()
-  pdb.set_trace()
-  for i in [2,3]:
+  # test1()
+  # delTuningData()
+  # pdb.set_trace()
+  for i in [2, 3]:
     genTuningData()
     start(i)
-
