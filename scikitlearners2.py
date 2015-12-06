@@ -9,6 +9,7 @@ from main import *
 from newabcd import sk_abcd
 import pandas as pd
 import numpy as np
+from sklearn.metrics import roc_auc_score
 
 
 def csv2py(f):
@@ -37,6 +38,11 @@ def _Abcd(predicted, actual):
     # predicted_txt += [isDef(data)]  # this is for defect prediction, binary classes
     predicted_txt.append(data)  # for multiple classes, just use it
   score = sk_abcd(predicted_txt, actual)
+  if The.option.tunedobjective == 6: # auc
+    actual_binary = np.array([ 1 if i == "Delay" else 0 for i in actual ])
+    predicted_binary = np.array([ 1 if i == "Delay" else 0 for i in predicted ])
+    score[0].append(int(roc_auc_score(actual_binary,predicted_binary)*100))
+    score[1].append(int(roc_auc_score(actual_binary,predicted_binary)*100))
   return score
 
 
