@@ -138,6 +138,6 @@ def start(obj, path="./data_Wollongong", isSMOTE=False):
 
 
 if __name__ == "__main__":
-  for i in [6]:
+  for i in [2,3,6]:
     genTuningData()
     start(i)

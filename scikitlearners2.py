@@ -38,11 +38,11 @@ def _Abcd(predicted, actual):
     # predicted_txt += [isDef(data)]  # this is for defect prediction, binary classes
     predicted_txt.append(data)  # for multiple classes, just use it
   score = sk_abcd(predicted_txt, actual)
-  if The.option.tunedobjective == 6: # auc
-    actual_binary = np.array([ 1 if i == "Delay" else 0 for i in actual ])
-    predicted_binary = np.array([ 1 if i == "Delay" else 0 for i in predicted ])
-    score[0].append(int(roc_auc_score(actual_binary,predicted_binary)*100))
-    score[1].append(int(roc_auc_score(actual_binary,predicted_binary)*100))
+  # if The.option.tunedobjective == 6: # auc
+  actual_binary = np.array([ 1 if i == "Delay" else 0 for i in actual ])
+  predicted_binary = np.array([ 1 if i == "Delay" else 0 for i in predicted ])
+  score[0].append(int(roc_auc_score(actual_binary,predicted_binary)*100))
+  score[1].append(int(roc_auc_score(actual_binary,predicted_binary)*100))
   return score
 
 
@@ -64,7 +64,7 @@ def _Abcd(predicted, actual):
 
 def learn(clf,class_col = 0):
   def cov(data):
-    lst = [ "Delay" if i !="Nondelay" else i for i in data ]
+    lst = [ "Delay" if i =="high" or i=="medium" else "No_Delay" for i in data ]
     return lst
   def build(src):
     df = pd.read_csv(src,header = 0)
@@ -72,7 +72,6 @@ def learn(clf,class_col = 0):
     df = df._get_numeric_data()
     train_X = df.as_matrix() # numpy array with numeric
     return train_X, train_Y
-
   train_X, train_Y = build(The.data.train[0])
   test_X,test_Y = build(The.data.predict[0])
   clf = clf.fit(train_X, train_Y)
